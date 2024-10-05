@@ -185,12 +185,12 @@
                         <span class="menu-title">Pool</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="report1.html">
                         <i class="menu-icon fas fa-chart-bar"></i>
                         <span class="menu-title">Report & Analytics</span>
                     </a>
-                </li> 
+                </li>  -->
             </ul>
         </nav>
 
@@ -993,24 +993,7 @@
                                     // Initialize the clock display immediately
                                     updateClock();
                                 </script>
-                                <script>
-                                    document.addEventListener('DOMContentLoaded', () => {
-                                        const logoutButton = document.getElementById('logout-button');
-
-                                        // Check authentication status
-                                        if (localStorage.getItem('authenticated') !== 'true') {
-                                            // Redirect to login page if not authenticated
-                                            window.location.href = 'login.html';
-                                        }
-
-                                        logoutButton.addEventListener('click', () => {
-                                            // Remove authentication flag from localStorage
-                                            localStorage.removeItem('authenticated');
-                                            // Redirect back to login page on logout
-                                            window.location.href = 'login.html';
-                                        });
-                                    });
-                                </script>
+                               
                                 <script>
                                     // Function to hide all sections
                                     function hideAllSections() {
